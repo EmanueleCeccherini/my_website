@@ -1,8 +1,52 @@
-body{background-color: rgb(5,0,60)}
-body * {color: rgb(255,142,17); margin-left: 30vh; margin-right: 30vh; margin-top: 40px}
-h1, h2, h3 {color: rgb(255,167,0)}
-ul, a {margin-left: 0vh}
-h4 {margin: 0px; align: center;
-    border: 2px solid rgb(0,225,205); padding: 20px; width: 200px; border-top: 20px solid rgb(0,220,200);
-    display: inline-block; overflow: hidden;
-    }
+*{
+  box-sizing: border-box;
+  margin: 0em;
+  padding: 0em;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-image: url(Snow-Mountain-4K.jpg);
+  height: 100%;
+}
+
+header{
+  position: fixed;
+  padding: 0em 39.29em;
+  background-color: #ffffff;
+}
+
+
+a{
+  display:inline-block;
+  padding: 4em; padding-top: 6em;
+  transition: all 0.25s ease-out;
+  border-bottom: solid #ffffff;
+  color: #3c4142;
+  text-decoration: none;
+  font-weight: bold;
+  }
+
+a:hover{
+  border-bottom: solid #3c4142;
+}
+
+a:active{
+  color: #ffffff;
+  background-color: #3c4142;
+
+}
+
+.titolo{
+  position:absolute;
+  top: 2em; left: -0.5em;
+  padding: 0.5em 0.5em 0.5em 1em;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 10em;
+  color: #3c4142;
+}
+
+.titolo:hover{
+  color: #ffffff;
+  background-color: #3c4142;
+}
