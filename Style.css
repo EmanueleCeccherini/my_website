@@ -7,7 +7,10 @@
 body{
   font-family: 'Montserrat', sans-serif;
   background-image: url(Snow-Mountain-4K.jpg);
-  height: 100%;
+  background-position: center 6em;
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header{
