@@ -6,47 +6,57 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
-  background-image: url(Snow-Mountain-4K.jpg);
-  background-position: center 6em;
-  background-attachment: scroll;
+  background-image: url(UP.jpg);
+  background-position: center 8%;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 header{
   position: fixed;
-  padding: 0% 32.63%;
+  height: 10%; width: 100%;
   background-color: #ffffff;
 }
 
+header::before{
+  content: "\0000a0";
+  float:left;
+  width:30%;
+}
 
 a{
   display:inline-block;
-  padding: 4em; padding-top: 6em;
+  height: 100%; width: 10%;
+  padding-top: 1.8%;
+  text-align: center;
   transition: all 0.25s ease-out;
   border-bottom: solid #ffffff;
   color: #3c4142;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+  a:hover{
+    border-bottom: solid #3c4142;
   }
 
-a:hover{
-  border-bottom: solid #3c4142;
-}
+  a:active{
+    color: #ffffff;
+    background-color: #3c4142;
 
-a:active{
-  color: #ffffff;
-  background-color: #3c4142;
-
-}
+  }
 
 .titolo{
   position:absolute;
-  top: 2em; left: -0.5em;
-  padding: 0.5em 0.5em 0.5em 1em;
+  top: 30%; left: -2%;
+  padding: 3% 3% 3% 5%;
   font-family: 'Abril Fatface', cursive;
-  font-size: 10em;
+  font-size: 9em;
   color: #3c4142;
+  transition: all 0.5s ease-out;
 }
 
 .titolo:hover{
@@ -56,6 +66,38 @@ a:active{
 
 .presentazione{
   position:absolute;
-  top: 40em; left: 80em; right: 20em;
-  color: #ffffff;
+  top: 90%; left: 5%; right: 60%;
+  color: #000000;
+  font-size: 1em;
+  text-align:left;
+  line-height: 1.7em;
+}
+
+.chisono{
+  position:absolute;
+  top: 120%;
+  color: #000000;
+  font-size: 1.2em;
+  text-align:center;
+  line-height: 1.7em;
+  background-color: #ffffff;
+  padding: 5%; padding-left: 20%; padding-right:20%;
+  width: 100%;
+}
+
+.titolopar{
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+footer{
+  font-size: 2em;
+  position: absolute;
+  top: 300%; bottom: 10%;
+  width: 100%; height: 20%;
+  padding-top: 4.7%;
+  text-align: center;
+  background-color: #ffffff;
 }
