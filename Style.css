@@ -15,7 +15,7 @@ body{
 
 header{
   position: fixed;
-  padding: 0em 39.29em;
+  padding: 0% 32.63%;
   background-color: #ffffff;
 }
 
@@ -51,5 +51,11 @@ a:active{
 
 .titolo:hover{
   color: #ffffff;
-  background-color: #3c4142;
+  background-color: rgba(60, 65, 66, 0.9);
+}
+
+.presentazione{
+  position:absolute;
+  top: 40em; left: 80em; right: 20em;
+  color: #ffffff;
 }
