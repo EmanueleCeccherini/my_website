@@ -29,23 +29,23 @@ body{
 }
 
 .parallax__layer--back {
-  transform: translateZ(-5px) scale(2);
+  transform: translateZ(-6px) scale(2.2);
 }
 
 #bg1{
   position:absolute;
-  top: 30%;
+  top: 40%;
 }
 
 #bg2{
   position:absolute;
-  top: 200%;
+  top: 220%;
 }
 
 #banner{
-  position: fixed;
+  position: sticky;
   z-index:1000;
-  height: 10%; width: 100%;
+  height: 12%; width: 100%;
   background-color: #ffffff;
 }
 
@@ -57,9 +57,12 @@ body{
 
 .menuitem{
   display: inline-block;
-  padding: 1.8%; text-align: center;
+  padding: 2%; text-align: center;
   height: 100%; width: 10%;
   transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
   border-bottom: solid #ffffff;
   color: #3c4142;
   text-decoration: none;
@@ -67,7 +70,7 @@ body{
 }
 
 .menuitem:hover{
-  border-bottom: solid #3c4142;
+  border-bottom: 0.25em solid #3c4142;
 }
 
 .menuitem:active{
@@ -112,6 +115,13 @@ body{
   color: #3c4142;
 }
 
+#FotoIo{
+  position:absolute;
+  z-index:500;
+  top: 100%; left: 42%;
+  transform: scale(0.8);
+}
+
 .titolopar{
   text-align: left;
   font-family: 'Abril Fatface', cursive; font-weight: lighter;
@@ -120,9 +130,9 @@ body{
 
 #finpag{
   font-size: 2em;
-  top: 320%; bottom: 10%;
-  width: 100%; height: 20%;
-  padding-top: 4.7%;
+  top: 350%; bottom: 10%;
+  width: 100%; height: 12%;
+  padding-top: 2%;
   text-align: center;
   background-color: #ffffff;
 }
