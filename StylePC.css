@@ -77,7 +77,6 @@ body{
 .menuitem:active{
   color: #ffffff;
   background-color: #3c4142;
-
 }
 
 .titolo{
@@ -121,7 +120,16 @@ body{
   top: 122.5%; left: 40%;
   z-index:500;
   transform: scale(0.8);
+  transition: all 0.25s;
 }
+
+#FotoIo:hover{
+  position: absolute;
+  top: 121%; left: 40%;
+  z-index:500;
+  transform: scale(0.9);
+}
+
 
 .titolopar{
   text-align: left;
