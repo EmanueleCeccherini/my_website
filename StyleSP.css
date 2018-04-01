@@ -3,7 +3,6 @@
   -moz-box-sizing: border-box;
   margin: 0em;
   padding: 0em;
-  text-size-adjust: auto;
 }
 
 body{
@@ -30,54 +29,59 @@ body{
 }
 
 .parallax__layer--back {
-  transform: translateZ(-6px) scale(0);
+  transform: translateZ(-6px) scale(2.2);
 }
 
 #bg1{
   position:absolute;
-  top: 15%;
+  top: 10%;
 }
 
 #bg2{
   position:absolute;
-  top: 15%;
+  top: 250%;
+  z-index:-10;
 }
 
 #banner{
   position: sticky;
   z-index:1000;
-  height: 12%; width: 100%;
+  height: 6%; width: 100%;
   background-color: #ffffff;
+  font-size: 0%;
+  transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+}
+
+#banner:hover{
+  position: sticky;
+  z-index:1000;
+  height: 20%; width: 100%;
+  background-color: #ffffff;
+  font-size: 1.2em;
 }
 
 #banner::before{
   content: "\0000a0";
   float:left;
-  width:30%;
+  width: 10%; height: 100%;
 }
 
 .menuitem{
   display: inline-block;
-  padding: 2.3%; text-align: center;
-  height: 100%; width: 10%;
-  transition: all 0.25s ease-out;
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  border-bottom: solid #ffffff;
+  padding-top: 5%;
+  width: 40%; height: 50%;
+  text-align: center;
   color: #3c4142;
   text-decoration: none;
-  font-weight: bold; font-size: 1.2em; font-family: 'Montserrat', sans-serif;
-}
-
-.menuitem:hover{
-  border-bottom: 0.25em solid #3c4142;
+  font-weight: bold; font-family: 'Montserrat', sans-serif;
 }
 
 .menuitem:active{
   color: #ffffff;
   background-color: #3c4142;
-
 }
 
 .titolo{
@@ -121,7 +125,16 @@ body{
   top: 122.5%; left: 40%;
   z-index:500;
   transform: scale(0.8);
+  transition: all 0.25s;
 }
+
+#FotoIo:hover{
+  position: absolute;
+  top: 121%; left: 40%;
+  z-index:500;
+  transform: scale(0.9);
+}
+
 
 .titolopar{
   text-align: left;
