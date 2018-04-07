@@ -128,11 +128,11 @@ body{
   transition: all 0.25s;
 }
 
-#FotoIo:hover{
+#Circle{
   position: absolute;
-  top: 121%; left: 40%;
-  z-index:500;
-  transform: scale(0.9);
+  top: 122.5%; left: 40%;
+  height: 300px; width: 300px;
+  background-color: #3c4142;
 }
 
 
