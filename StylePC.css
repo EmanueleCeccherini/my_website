@@ -34,13 +34,18 @@ body{
 
 #bg1{
   position:absolute;
-  top: 10%; right:60%;
+  top: 10%;
 }
 
 #bg2{
   position:absolute;
-  top: 230%;
-  z-index:-10;
+  top: 280%;
+}
+
+#bg3{
+  position:absolute;
+  top: 300%;
+  z-index:-20;
 }
 
 #banner{
@@ -143,8 +148,8 @@ a{
 
 #par_lavori{
   position:absolute;
-  top: 260%;
-  width: 100%; height: 150%;
+  top: 280%;
+  width: 100%; height: 130%;
   background-color: #ffffff;
 }
 
@@ -159,35 +164,39 @@ a{
   transform: translate( -50%, 0%);
   width: 300%; height: 31%;
   position: absolute;
-  top: 15%;
+  top: 20%;
   background-color: #ffffff;
   transition: 2.5s all;
 }
 
 .riga:hover{
-  transform: translate( -58.9%, 0%);
+  transform: translate( -67.66%, 0%);
 }
 
 #riga2{
   position: absolute;
-  top: 50%;
+  top: 60%;
 }
 
-#joes_pizza, #young_toast{
+#fast_lane, #mountain_moon{
   position: absolute;
   left: 62.8%;
 }
 
-#leonardiana_comedia, #mountain_moon{
+#leonardiana_comedia, #joes_pizza{
   position: absolute;
   left: 71.7%;
 }
 
-#mercedes, #clichocard{
+#young_toast, #mercedes{
   position: absolute;
   left: 80.6%;
 }
 
+#clichocard, #shutter_island{
+  position: absolute;
+  left: 89.5%;
+}
 
 @media screen and (max-width: 1680px) {
   #FotoIo{
