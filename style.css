@@ -10,10 +10,9 @@ body *{
 }
 
 .background{
-  position: absolute;
+  position: relative;
   z-index: -100;
-  width: 4000px;
-  left: -350px;
+  width: 100%;
 }
 
 .navbar{
