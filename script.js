@@ -3,10 +3,10 @@ function underline(){
     $("#line-bottom").removeClass().addClass("home")
   }
   else if($(this).hasClass("2")){
-    $("#line-bottom").removeClass().addClass("aboutme")
+    $("#line-bottom").removeClass().addClass("projects")
   }
   else if($(this).hasClass("3")){
-    $("#line-bottom").removeClass().addClass("projects")
+    $("#line-bottom").removeClass().addClass("photos")
   }
   else if($(this).hasClass("4")){
     $("#line-bottom").removeClass().addClass("spinner")
