@@ -11,7 +11,7 @@ body *{
 }
 
 body{
-  overflow-x: hidden;
+  overflow-x: hidden; 
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -33,6 +33,7 @@ body{
 }
 
 .navbar{
+  position: absolute; top: 0px;
   width: 100vw; height: 110px;
   background-color: #ffffff;
   position: fixed;
@@ -183,18 +184,18 @@ h2{
 }
 
 #p1{
-  top: 15px;
+  top: 30px;
   width: 50vw;
 }
 
 #pol1{
-  left: 0%; top:350px;
+  left: 0%; top:450px;
 }
 
 .polaroid{
   left: 50%;
   position: absolute;
-  transition: all 0.5s;
+  transition: all 2s;
   box-shadow: : 0 4px 8px 10px rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -272,6 +273,8 @@ h2{
 
 .photo{
   width: 400px;
+  transition: all 3.5s;
+  transform-origin: top center;
 }
 
 #w1{
@@ -314,44 +317,22 @@ h2{
   top:2100px
 }
 
-#pr1{
-  transform: rotate(-2deg);
+.section3{
+  position: relative;
+  top: 4500px;
 }
 
-#pr2{
-  transform: rotate(5deg);
+.footer{
+  display: block;
+  position: relative;
+  top: 7000px;
 }
 
-#pr3{
-  transform: rotate(1deg);
-}
-
-#pr4{
-  transform: rotate(-2deg);
-}
-
-#pr5{
-  transform: rotate(3deg);
-}
-
-#pr6{
-  transform: rotate(2deg);
-}
-
-#pr7{
-  transform: rotate(-5deg);
-}
-
-#pr8{
-  transform: rotate(4deg);
-}
-
-#pr9{
-  transform: rotate(-3deg);
-}
-
-#pr10{
-  transform: rotate(-5deg);
+.bar{
+  left: 0px;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100vw; height: 110px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -367,12 +348,18 @@ h2{
   #line-bottom{
     display: none;
   }
+  p{
+    font-size: 2.5rem;
+  }
+  h1{
+    font-size: 5rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
   #c1{
     top: 250px;
     width: 100vw;
-  }
-  #t1{
-    font-size: 3rem;
   }
   #pol1{
     top:200px;
@@ -383,9 +370,6 @@ h2{
   #polaroids{
     transform: translate(-50%,-32.5%) scale(0.6);
   }
-  .section2{
-    top: 1000px;
-  }
   .sinistra{
     float: none;
   }
@@ -394,26 +378,29 @@ h2{
     text-align: left;
   }
   .section2{
-    align-items: flex-end;
+    position: relative;
+    width: 100vw;
+    top: 1300px;
   }
-  .photos{
-    display: block;
-    width: 250px;
+  .work{
+    position: relative;
+    display: inline-table;
+    width: 100vw;
   }
   .sect{
     position: relative;
-    width: 250px; height: 430px;
-  }
-  .work{
-    display: inline-table;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: block;
     position: relative;
-    width: 250px; height: 700px;
-    left: 0;
-    transform: translate(0,0);
-    margin-left: 40px;
+    width: 70vw;
   }
-  #t2{
-    font-size: 3rem;
+  .photo{
+    position: relative;
+    left: 25vw;
+    width: 50vw;
+    top:60px;
+
   }
 }
 

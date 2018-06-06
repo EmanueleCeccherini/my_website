@@ -41,3 +41,35 @@ function light(){
   $(this).addClass("selectedcol")
 }
 $(".navitemcol").click(light)
+
+$(".random_rotation").each( function() {
+  var rNum = (Math.random()*15)-7;
+  $(this).css( {
+    '-webkit-transform': 'rotate('+rNum+'deg)',
+    '-moz-transform': 'rotate('+rNum+'deg)'
+  } );
+} );
+
+window.setInterval(function somma_pari () {
+  $(".random_rotation").each( function() {
+    var rNum = (Math.random()*10)-5;
+    $(this).css( {
+      '-webkit-transform': 'rotate('+rNum+'deg)',
+      '-moz-transform': 'rotate('+rNum+'deg)'
+    } );
+  } );
+}, 2000)
+
+var offset = -500;
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top + offset
+      }, 1500);
+    }
+  });
+});
