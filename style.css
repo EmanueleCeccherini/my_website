@@ -7,6 +7,7 @@
 
 body *{
   display: inline-block;
+  user-select: none;
 }
 
 body{
@@ -14,7 +15,10 @@ body{
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  background-image: url('img/wood.jpg');
+  background-position: left;
+  background-size: auto;
+  background-repeat: repeat-y;
 }
 
 .centered{
@@ -26,28 +30,6 @@ body{
 .container{
   position: relative;  left: 50%;
   transform: translate(-50%,0%);
-}
-
-.background{
-  position :absolute;
-  top: 0px;
-  z-index: -100;
-}
-
-#bg2{
-  top: 2210px;
-}
-
-#bg3{
-  top: 4420px;
-}
-
-#bg4{
-  top: 6630px;
-}
-
-#bg5{
-  top: 8840px;
 }
 
 .navbar{
@@ -115,46 +97,46 @@ body{
 }
 
 .navbarcol{
-  width: 100vw; height: 100px;
+  width: 100vw; height: 150px;
   background-color: #ffffff;
-  position: fixed;
+  position: absolute;
   top: 0px;
   z-index: 600;
 }
 
 .navmenucol{
-  width: 100vw; height: 325px;
-  position: fixed;
+  width: 100vw; height: 550px;
+  position: absolute;
   background-color: #4e4e4e;
   z-index: 300;
 }
 
 .navitemcol{
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
-  margin-left: 50px; padding: 10px;
+  margin-left: 50px; padding: 20px;
   display: block;
   color: #cfcfcf;
   transform: translate(0,90%);
 }
 
 .menu_buttoncol{
-  position: fixed;
-  top: 50px; left:50px;
-  width: 35px; height: 25px;
+  position: absolute;
+  top: 75px; left: 50px;
+  width: 50px; height: 40px;
   z-index: 700;
 }
 
 .button0deg{
   transform: translate(0%,-50%) rotate(0deg);
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 .button180deg{
   transform: translate(0%,-50%) rotate(180deg);
-  transition: all 1s;
+  transition: all 1.5s;
 }
 
 .selectedcol{
@@ -162,13 +144,13 @@ body{
 }
 
 .reveal{
-  top:100px;
-  transition: all 1s;
+  top:150px;
+  transition: all 1.5s;
 }
 
 .hide{
-  top:-225px;
-  transition: all 1s;
+  top:-400px;
+  transition: all 1.5s;
 }
 
 .text{
@@ -288,7 +270,7 @@ h2{
   top: 20px;
 }
 
-.photos{
+.photo{
   width: 400px;
 }
 
@@ -386,7 +368,7 @@ h2{
     display: none;
   }
   #c1{
-    top: 150px;
+    top: 250px;
     width: 100vw;
   }
   #t1{
@@ -414,7 +396,6 @@ h2{
   .section2{
     align-items: flex-end;
   }
-
   .photos{
     display: block;
     width: 250px;
@@ -430,6 +411,9 @@ h2{
     left: 0;
     transform: translate(0,0);
     margin-left: 40px;
+  }
+  #t2{
+    font-size: 3rem;
   }
 }
 
