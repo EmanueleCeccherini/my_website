@@ -11,7 +11,7 @@ body *{
 }
 
 body{
-  overflow-x: hidden; 
+  overflow-x: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -19,6 +19,68 @@ body{
   background-position: left;
   background-size: auto;
   background-repeat: repeat-y;
+}
+
+#spinner *{
+  display: block;
+  box-sizing: content-box;
+  -moz-box-sizing: content-box;
+}
+
+#spinner{
+  position: fixed;
+  width: 100vw; height: 100vh;
+  background-color: #ffffff;
+  z-index: 2000;
+}
+
+.s_container{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50px; height: 50px;
+}
+
+.s_circle{
+  position: absolute;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-left-color: #ff8b00;
+  border-top-color: #ff8b00;
+  border-right-color: #ffffff;
+  border-bottom-color: #ff8b00;
+  animation: spinner 1s infinite;
+}
+
+.s_line{
+  position: relative;
+  z-index: 200;
+  background-color: #ff8b00;
+}
+
+#s_l1{
+  top: 5px; left: -2px;
+  transform: rotate(-45deg);
+  width: 24px; height: 5px;
+}
+
+#s_c2{
+  width: 30px; height: 30px;
+}
+
+#s_s2{
+  width: 20px; height: 20px;
+  animation-direction: reverse;
+}
+
+@keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
 }
 
 .centered{

@@ -1,3 +1,13 @@
+$('#spinner')
+    .hide()
+    .ajaxStart(function() {
+        $(this).show();
+    })
+    .ajaxStop(function() {
+        $(this).hide();
+    })
+;
+
 function underline(){
   if($(this).hasClass("1")){
     $("#line-bottom").removeClass().addClass("home")
