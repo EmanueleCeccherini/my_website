@@ -1,9 +1,8 @@
-$(window).load(function() {
-  $(".se-pre-con").fadeOut("slow");;
-});
-
-jQuery(document).ready(function() {
-  jQuery("#spinner").hide();
+$(document).ajaxStart(function () {
+    $("#spinner").show();
+})
+$(document).ajaxComplete(function () {
+    $("#spinner").hide();
 });
 
 function underline(){
