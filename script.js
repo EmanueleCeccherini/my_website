@@ -1,3 +1,7 @@
+$(window).load(function() {
+  $(".se-pre-con").fadeOut("slow");;
+});
+
 jQuery(document).ready(function() {
   jQuery("#spinner").hide();
 });
