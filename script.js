@@ -1,12 +1,6 @@
-$('#spinner')
-    .hide()
-    .ajaxStart(function() {
-        $(this).show();
-    })
-    .ajaxStop(function() {
-        $(this).hide();
-    })
-;
+$(window).load(function() {
+		$("#spinner").fadeOut("slow");;
+});
 
 function underline(){
   if($(this).hasClass("1")){
