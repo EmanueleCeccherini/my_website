@@ -65,17 +65,22 @@ body{
   width: 24px; height: 5px;
 }
 
+#s_l2{
+  top: -3px; left: 13px;
+  transform: rotate(-45deg);
+  width: 15px; height: 9px;
+  background-color: #ffffff;
+}
+
 #s_c2{
   width: 30px; height: 30px;
 }
 
 #s_s2{
   width: 20px; height: 20px;
+  transform: rotate(45deg);
+  border-right-color: #ff8b00;
   animation-direction: reverse;
-}
-
-.s_hide{
-  display: none;
 }
 
 @keyframes spinner {
@@ -86,6 +91,7 @@ body{
     transform: rotate(-360deg);
   }
 }
+
 
 .centered{
   position: absolute;
