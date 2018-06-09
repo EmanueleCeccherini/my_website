@@ -21,6 +21,9 @@ body{
   background-repeat: repeat-y;
 }
 
+.no-js #loader { display: none;}
+.js #loader { display: block; position: fixed;}
+
 #spinner *{
   display: block;
   box-sizing: content-box;

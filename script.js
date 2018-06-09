@@ -1,9 +1,6 @@
-$(document).ajaxStart(function () {
-    $("#spinner").show();
-})
-$(document).ajaxComplete(function () {
-    $("#spinner").hide();
-});
+$(window).load(function() {
+		$("#spinner").fadeOut();;
+	});
 
 function underline(){
   if($(this).hasClass("1")){
@@ -70,13 +67,14 @@ window.setInterval(function somma_pari () {
 var offset = -500;
 
 $(document).ready(function(){
-  $("a").on('click', function(event) {
+  $("a").click(scroll)
+  function scroll(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top + offset
-      }, 1500);
+      }, 1500)
     }
-  });
-});
+  }
+})
