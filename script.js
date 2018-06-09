@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-  jQuery("#spinner").remove();
+  jQuery("#spinner").hide();
 });
 
 function underline(){
