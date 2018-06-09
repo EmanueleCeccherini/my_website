@@ -6,8 +6,7 @@ $(document).ready(function(){
     }).bind("ajaxError", function() {
         $(this).hide();
     });
-
-     });
+});
 
 function underline(){
   if($(this).hasClass("1")){
