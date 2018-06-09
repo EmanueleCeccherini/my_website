@@ -1,6 +1,13 @@
-$(window).load(function() {
-		$("#spinner").fadeOut("slow");;
-});
+$(document).ready(function(){
+    $("#spinner").bind("ajaxSend", function() {
+        $(this).show();
+    }).bind("ajaxStop", function() {
+        $(this).hide();
+    }).bind("ajaxError", function() {
+        $(this).hide();
+    });
+
+     });
 
 function underline(){
   if($(this).hasClass("1")){
