@@ -78,3 +78,35 @@ $(document).ready(function(){
     }
   }
 })
+
+function carousel_sx(){
+	if($("#img1").hasClass("center")){
+		$("#img1").removeClass("center").addClass("left")
+		$("#img2").removeClass("right").addClass("center")
+	}
+	else if($("#img2").hasClass("center")){
+		$("#img2").removeClass("center").addClass("left")
+		$("#img3").removeClass("right").addClass("center")
+	}
+	else {
+
+	}
+}
+
+$("#car1").click(carousel_sx)
+
+function carousel_dx(){
+	if($("#img2").hasClass("center")){
+		$("#img2").removeClass("center").addClass("right")
+		$("#img1").removeClass("left").addClass("center")
+	}
+	else if($("#img3").hasClass("center")){
+		$("#img3").removeClass("center").addClass("right")
+		$("#img2").removeClass("left").addClass("center")
+	}
+	else {
+
+	}
+}
+
+$("#car2").click(carousel_dx)

@@ -11,6 +11,44 @@ body{
   animation-timing-function: step-end;
 }
 
+.home_circle{
+  position: absolute;
+  top: 50px; left: 50px;
+  width: 100px; height: 100px;
+  border: 3px solid;
+  border-top-color: #071533;
+  border-right-color: #071533;
+  border-bottom-color: #071533;
+  border-left-color: #071533;
+  border-radius: 50%;
+  transition: all 0.5s;
+  animation: home 1s infinite linear;
+  z-index: 200;
+}
+
+.home_circle:hover{
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c7c7c7;
+  border-left-color: #c7c7c7;
+}
+
+.home_button{
+  opacity: 10%;
+  position: absolute;
+  top: 100px; left: 100px;
+  width: 50px;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes home {
+  0%{
+    transform: rotate(0deg);
+  }
+  0%{
+    transform: rotate(-360deg);
+  }
+}
+
 .shape{
   position: absolute;
   top: 50%; left: 50%;
