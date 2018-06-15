@@ -174,6 +174,17 @@ h2{
   font-size: 2rem;
 }
 
+a{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800;
+  transition: all 0.5s;
+}
+
+a:hover{
+  color: #454545;
+}
+
 #c1{
   top: 400px;
   width: 100vw;
@@ -358,11 +369,11 @@ h2{
 
 @keyframes sotto_sx {
   0%{
-    transform: translate(-50%,-50%) rotate(10deg);
+    transform: translate(-50%,-50%) rotate(0deg);
     z-index: 400;
   }
   50%{
-    transform: translate(-170%,-50%) rotate(0deg);
+    transform: translate(-170%,-50%) rotate(10deg);
     z-index: 200;
   }
   100%{
@@ -374,14 +385,14 @@ h2{
 .footer{
   display: block;
   position: relative;
-  top: 5300px;
+  top: 5000px;
 }
 
 .bar{
   left: 0px;
   position: absolute;
   background-color: #ffffff;
-  width: 100vw; height: 600px;
+  width: 100vw; height: 400px;
 }
 
 .contact{
@@ -393,13 +404,22 @@ h2{
 #mail{
   user-select: text;
   position: absolute;
-  top: 200px; left: 50%;
-  transition: all 0.5s;
+  top: 150px; left: 50%;
 }
 
 #mail:hover{
-  color:  #6b6b6b;
-  font-size: 1.4rem;
+ font-weight: 600;
+}
+
+.insta{
+  position: absolute;
+  top: 200px; left: 50%;
+  transform: translate(-50%,0);
+  width: 100px;
+}
+
+.insta:hover{
+  transform: translate(-50%,0) scale(1.1);
 }
 
 @media screen and (max-width: 1100px) {
@@ -475,6 +495,15 @@ h2{
     display: block;
     position: relative;
     top: 4500px;
+  }
+  #mail{
+    font-size: 1.5rem;
+  }
+  .insta{
+    position: absolute;
+    top: 200px; left: 50%;
+    transform: translate(-50%,0);
+    width: 100px;
   }
 }
 

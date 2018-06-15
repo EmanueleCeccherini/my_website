@@ -71,14 +71,6 @@ $(document).ready(function(){
   }
 })
 
-$(".image").each( function() {
-  var b = (Math.random()*30)-15;
-  $(this).css( {
-    '-webkit-transform': 'translate(-50%,-50%) rotate('+b+'deg)',
-    '-moz-transform': 'translate(-50%,-50%) rotate('+b+'deg)'
-  } );
-} );
-
 function sx() {
 	if ($("#img2").hasClass("left")) {
 		$(".image").removeClass("left");
