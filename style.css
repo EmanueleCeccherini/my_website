@@ -15,10 +15,7 @@ body{
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  background-image: url('img/wood.jpg');
-  background-position: left;
-  background-size: auto;
-  background-repeat: repeat-y;
+  background-color: #27282b;
 }
 
 .centered{
@@ -83,13 +80,8 @@ body{
   width: 96px;
 }
 
-.spinner{
-  left: 405px;
-  width: 104px;
-}
-
 .contacts{
-  left: 543px;
+  left: 405px;
   width: 116px;
 }
 

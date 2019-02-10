@@ -12,9 +12,6 @@ function underline(){
   else if($(this).hasClass("3")){
     $("#line-bottom").removeClass().addClass("photos")
   }
-  else if($(this).hasClass("4")){
-    $("#line-bottom").removeClass().addClass("spinner")
-  }
   else{
     $("#line-bottom").removeClass().addClass("contacts")
   }
